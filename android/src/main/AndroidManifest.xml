@@ -1,0 +1,3 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="pro.truongsinh.flutter.example.plugin_with_protobuf">
+</manifest>
