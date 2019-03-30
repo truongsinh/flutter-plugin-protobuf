@@ -1,0 +1,33 @@
+// protoc --dart_out=./lib/gen ./protos/person.proto
+
+syntax = "proto3";
+
+// `java_package` should match the package name you declare for `androidPackage` in your pubspec.yaml
+option java_package = "pro.truongsinh.flutter.example.plugin_with_protobuf";
+option java_outer_classname = "Protos";
+//option swift_class_prefix = "Protos";
+option objc_class_prefix = "Protos";
+
+message Person {
+    string name = 1;
+    repeated UsaAddress addresses = 2;
+    Person supervisorOf = 3;
+}
+
+message UsaAddress {
+    string streetNameAndNumber = 1;
+    string streetNameAndNumber2 = 2;
+    string city = 3; // nevermind validation
+    UsaState state = 4;
+    uint32 postCode = 5; // nevermind validation
+}
+
+// Excluding Commonwealth/Territory or Military
+enum UsaState {
+    UNKNOWN = 0;
+    AZ = 1;
+    CA = 5;
+    // ...
+    WA = 47;
+    TURNING_OFF = 50;
+};
