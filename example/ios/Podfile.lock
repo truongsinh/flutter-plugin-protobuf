@@ -2,10 +2,16 @@ PODS:
   - Flutter (1.0.0)
   - plugin_with_protobuf (0.0.1):
     - Flutter
+    - SwiftProtobuf (~> 1.4)
+  - SwiftProtobuf (1.4.0)
 
 DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
   - plugin_with_protobuf (from `.symlinks/plugins/plugin_with_protobuf/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftProtobuf
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,7 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  plugin_with_protobuf: 86bee88c449693a9c18cb19a5c8bcafa9b2d31ca
+  plugin_with_protobuf: a9379c34080965f015f677c0d78be6cfe5737026
+  SwiftProtobuf: b06646ed6cdcfc3fecd074c6000fe0c413140e4f
 
 PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
 
