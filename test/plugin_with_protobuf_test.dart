@@ -16,6 +16,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await PluginWithProtobuf.platformVersion, '42');
+    expect(await PluginWithProtobuf.myPerson, '42');
   });
 }

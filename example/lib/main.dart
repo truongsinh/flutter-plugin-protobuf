@@ -38,7 +38,6 @@ class PersonWidget extends StatelessWidget {
   final String _indent;
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
